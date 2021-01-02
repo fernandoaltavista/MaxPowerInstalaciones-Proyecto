@@ -1,0 +1,393 @@
+/*--------------------------VARIABLES COLORES------------------------------------*/
+$ColorLetraPrimario: black;
+$ColorLetraSecundario: white;
+
+$ColorPrincipal:#BF1313;
+$ColorSecundario:black;
+$ColorTerciario:white;
+
+/*--------------------------VARIABLES FONDOS------------------------------------*/
+$FondoMenu:rgba(243, 243, 243, 0.356);
+$FondoNosotros:linear-gradient(147deg, #c62128 0%, #a00000 74%);
+$FondoFooter:linear-gradient(to bottom left, #000000 0%, #292929 100%);
+$FondoServicio:linear-gradient(0deg, rgba(255,255,255,0.8253676470588236) 0%, rgba(0,0,0,0.9626225490196079) 0%);
+/*--------------------------VARIABLES TAMAÑOS DE LETRAS------------------------------------*/
+$FuenteCopy:.8rem;
+$FuenteChica:1.2rem;
+$FuenteMediana:1.5rem;
+$FuenteGrande:1.7rem;
+$FuenteTitulo:2.3rem;
+$FuenteBanner:2.5rem;
+
+$DiferenciaMobile: 0.3rem;
+
+/*--------------------------VARIABLES LETRAS------------------------------------*/
+$LetraPrincipal: 'Open Sans Condensed', sans-serif;
+$LetraSecundaria:'Bebas Neue', cursive;
+$LetraBanner:'Francois One', sans-serif;
+
+/*-----------------------VARIABLES ICONOS----------------------------------------*/
+$IconosFooter: 'facebook','phone','mail','instagram';
+
+/*--------------------------SCSS------------------------------------*/
+body{
+    margin: 0;
+    color: $ColorLetraPrimario;
+}
+nav,footer{
+    ul{
+        padding:0;
+        li{
+            list-style-type: none;
+
+          }
+      }
+}
+
+a{
+    text-decoration: none;
+    color: $ColorLetraPrimario;
+}
+a:hover{
+    text-decoration: none;
+    color: $ColorPrincipal ;
+}
+form{
+    input{
+       font-family: $LetraPrincipal;
+    }
+    textarea{
+        width: 70%;
+    }
+}
+img{
+    object-fit: cover;
+}
+footer{
+      
+        a{
+            color: $ColorLetraSecundario;
+        }    
+        p{
+            color: $ColorLetraSecundario;
+            margin-bottom: 0;
+        }
+}
+
+@each $seccion in nosotros,servicios,productos,contacto {
+  .padding-#{$seccion}{
+    background:linear-gradient(0deg, rgba(199,8,8,0.6530987394957983) 100%, rgba(0,0,0,0.9710259103641457) 100%),url('../img/#{$seccion}.jpg');
+    @extend.bgCoverCenter;
+    @extend.paddingTitulo;
+    
+  }
+}
+
+/*---------------------------------Estilos en Fuentes---------------------------------------*/
+.bordeDoble{
+    border-top:double 3px $ColorLetraPrimario ; 
+    width: 50%;
+  }
+  
+.bordeSimple{
+    border-top: solid 0.5px $ColorLetraSecundario;
+  }
+.centrar{
+     text-align: center;
+  }
+.letraTitulo{
+    font-family: $LetraSecundaria;
+  }
+.letraPrincipal{
+    font-family: $LetraPrincipal
+  }
+.fuenteTitulo{
+    font-size: $FuenteTitulo;
+  }
+.fuenteCopy{
+  font-size: $FuenteCopy;
+}
+.fuenteChica{
+  font-size: $FuenteChica;
+  
+  }
+.fuenteNormal{
+    font-size: $FuenteMediana;
+  
+  }
+.fuenteGrande{
+    font-size: $FuenteGrande;
+  }
+.fuenteBanner{
+    font-size:$FuenteBanner;
+}
+.textoBlanco {
+    color: $ColorLetraSecundario;
+  }
+.textoNegro{
+    color: $ColorLetraPrimario;
+  }
+.letraDeco{
+    font-family: $LetraBanner;
+  }
+.logo{
+    height: 50px;
+  }
+
+.logoBlanco{
+  height: 30px;
+}
+ /*---------------------------------Texto en Imagen-------------------------------------------------------------------------------------*/
+.texto80{
+	
+    position: absolute;
+    top:70%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    color: $ColorLetraPrimario;
+}
+
+.textoBanner{
+      position:absolute;
+      display: block;
+      top: 50%;
+      right: 3%; 
+      width: 40%;
+      text-align: left;
+      transform: translate(-5%,-50%);
+
+      p{
+        background-color: rgba(0,0,0,0.3);
+        
+      }
+}
+
+  /*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
+
+.fondoRojo{
+    background:$FondoNosotros;
+    
+    }
+
+.fondoContacto{
+      
+      background: linear-gradient(to top, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(https://cdn.pixabay.com/photo/2015/05/31/10/55/man-791049_960_720.jpg);
+      @extend.bgCoverCenter;
+      height: 250px;
+    }
+    
+.fondoNav{
+      background: $FondoMenu;
+    }
+    
+.fondoGrad{
+      background: $FondoFooter;
+    }
+
+.fondoNegro{
+  background: $FondoServicio;
+} 
+/*---------------------------------Estilos Padding y Margenes---------------------------------------*/
+
+.salto {
+      display: block;
+      margin-top: 20px;
+    }
+.paddingTitulo{
+        padding-top: 100px;
+        padding-bottom: 50px;
+        margin: 0;
+}  
+.paddingServ{
+      padding: 50px;
+      background: $FondoServicio;
+      color: white;
+      
+    }    
+   
+/*---------------------------------Estilos Banner---------------------------------------*/
+    
+.banner{
+      
+    background-image: url(../img/calefaccion.jpg); 
+    @extend.bgCoverCenter;
+    height: 100vh;
+    
+    
+     
+    }
+
+    
+.efectoTitulo{
+      animation-name: aparecer;
+      animation-duration: 4s;
+    }
+    
+.gradBanner{
+      background: linear-gradient(0deg, rgba(0,0,0,0.5746673669467788) 13%, rgba(255,255,255,0.05646008403361347) 61%);
+
+     @extend.bgCoverCenter;
+      height: 100vh;  
+      
+    }
+
+/*-----------------------------------CLASE CENTRAR BACKGROUND-------------------------------------------*/
+.bgCoverCenter{
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }    
+/*---------------------------------Estilos en Contenedores Flex---------------------------------------*/
+
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+  }
+  
+ /*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
+
+button {
+        .icon-menu:hover{
+            color: $ColorPrincipal; 
+        }
+}     
+.contenedorImg{
+        width: 100%;
+        overflow:hidden;
+      
+      }
+
+@each $redes in $IconosFooter {
+    .icon-#{$redes} {
+      list-style-type: none;
+
+    }
+  
+}
+
+/*----------------------------------------------------Efectos---------------------------------------*/
+
+.efecto{
+    transition: all .4s ease;
+    filter: grayscale(80%);
+    width: 100%;
+  }
+.efecto:hover{
+    transform: scale(1.1);
+    filter:grayscale(0%) ;
+  }
+  
+/*-----------------------------------------------------------------------Estilos en BS------------------------------------*/
+.navbar{
+  padding: .2rem;
+}
+
+.carousel-indicators {
+                li{
+                    background-color:white;
+                    width: 10px;
+                    height: 10px;
+                    border-radius: 50%;
+                }
+}
+
+button:focus{
+                      
+      outline:none;
+      
+    }
+.btn-primary:focus{
+  box-shadow: none;
+  background-color: #007bff;
+}
+
+@keyframes aparecer{
+    0% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+  
+      }
+    
+}
+ 
+/*---------------------------BLOQUES BEM------------------------------------*/
+.nosotros{
+        .nosotros__texto{
+          font-family: $LetraSecundaria;
+          color: $ColorLetraSecundario;
+          font-size: $FuenteGrande;
+
+        }
+        .nosotros__boton{
+          font-family: $LetraSecundaria;
+          color: $ColorLetraSecundario;
+          font-size: $FuenteMediana;
+        }
+
+}
+
+.formulario{
+            .formulario__titulo{
+              font-family: $LetraSecundaria;
+              font-size: $FuenteMediana;
+              color: $ColorLetraSecundario;
+
+            }
+}
+
+.contacto{
+    .contacto__titulo{
+      font-family: $LetraSecundaria;
+      font-size: $FuenteMediana;
+      
+    }
+    .contacto__lista{
+      font-family: $LetraPrincipal;
+     
+    }
+}
+
+.contactoFooter{
+          .contactoFooter__titulo{
+            font-family: $LetraSecundaria;
+            color: $ColorLetraSecundario;
+            font-size: $FuenteChica;
+          }
+}
+
+
+/*------------------------MEDIAS----------------------------------------------*/
+
+  @media screen and (max-width:776px) {
+    .fuenteNormal{
+      font-size: $FuenteMediana - $DiferenciaMobile;
+    }
+  
+    .fuenteChica{
+      font-size: $FuenteChica - $DiferenciaMobile;
+      
+      }
+     .fuenteTitulo{
+       font-size: $FuenteTitulo - $DiferenciaMobile;
+     } 
+    .fuenteGrande{
+        font-size: $FuenteGrande - $DiferenciaMobile;
+      }
+    .fuenteBanner{
+      font-size:$FuenteBanner - $DiferenciaMobile;
+    }
+    .logo{
+      height: 40px;
+    }
+    .logoBlanco{
+      height: 20px;
+    }
+    .nav-item{
+      border-bottom: solid rgba(0,0,0,0.7) .1px;
+    }
+  }
+             
