@@ -68,22 +68,22 @@ footer p {
   font-family: "Open Sans Condensed", sans-serif; }
 
 .fuenteTitulo {
-  font-size: 2.3rem; }
+  font-size: 2.2rem; }
 
 .fuenteCopy {
   font-size: 0.8rem; }
 
 .fuenteChica {
-  font-size: 1.2rem; }
+  font-size: 1.1rem; }
 
 .fuenteNormal {
-  font-size: 1.5rem; }
+  font-size: 1.4rem; }
 
 .fuenteGrande {
   font-size: 1.7rem; }
 
 .fuenteBanner {
-  font-size: 2.5rem; }
+  font-size: 2.4rem; }
 
 .textoBlanco {
   color: white; }
@@ -92,7 +92,7 @@ footer p {
   color: black; }
 
 .letraDeco {
-  font-family: "Francois One", sans-serif; }
+  font-family: "Julius Sans One", sans-serif; }
 
 .logo {
   height: 50px; }
@@ -167,7 +167,7 @@ footer p {
   animation-duration: 4s; }
 
 .gradBanner {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.574667) 13%, rgba(255, 255, 255, 0.0564601) 61%);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.774) 13%, rgba(26, 25, 25, 0.24) 80%);
   height: 100vh; }
 
 /*-----------------------------------CLASE CENTRAR BACKGROUND-------------------------------------------*/
@@ -175,13 +175,6 @@ footer p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
-
-/*---------------------------------Estilos en Contenedores Flex---------------------------------------*/
-.contenedor {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center; }
 
 /*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
 button .icon-menu:hover {
@@ -245,16 +238,16 @@ button:focus {
 .nosotros .nosotros__boton {
   font-family: "Bebas Neue", cursive;
   color: white;
-  font-size: 1.5rem; }
+  font-size: 1.4rem; }
 
 .formulario .formulario__titulo {
   font-family: "Bebas Neue", cursive;
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   color: white; }
 
 .contacto .contacto__titulo {
   font-family: "Bebas Neue", cursive;
-  font-size: 1.5rem; }
+  font-size: 1.4rem; }
 
 .contacto .contacto__lista {
   font-family: "Open Sans Condensed", sans-serif; }
@@ -262,20 +255,20 @@ button:focus {
 .contactoFooter .contactoFooter__titulo {
   font-family: "Bebas Neue", cursive;
   color: white;
-  font-size: 1.2rem; }
+  font-size: 1.1rem; }
 
 /*------------------------MEDIAS----------------------------------------------*/
 @media screen and (max-width: 776px) {
   .fuenteNormal {
-    font-size: 1.2rem; }
+    font-size: 1.1rem; }
   .fuenteChica {
-    font-size: 0.9rem; }
+    font-size: 0.8rem; }
   .fuenteTitulo {
-    font-size: 2rem; }
+    font-size: 1.9rem; }
   .fuenteGrande {
     font-size: 1.4rem; }
   .fuenteBanner {
-    font-size: 2.2rem; }
+    font-size: 2.1rem; }
   .logo {
     height: 40px; }
   .logoBlanco {

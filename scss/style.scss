@@ -13,18 +13,18 @@ $FondoFooter:linear-gradient(to top right, #000000 0%, #292929 100%);
 $FondoServicio:linear-gradient(0deg, rgba(255,255,255,0.8253676470588236) 0%, rgba(0,0,0,0.9626225490196079) 0%);
 /*--------------------------VARIABLES TAMAÑOS DE LETRAS------------------------------------*/
 $FuenteCopy:.8rem;
-$FuenteChica:1.2rem;
-$FuenteMediana:1.5rem;
+$FuenteChica:1.1rem;
+$FuenteMediana:1.4rem;
 $FuenteGrande:1.7rem;
-$FuenteTitulo:2.3rem;
-$FuenteBanner:2.5rem;
+$FuenteTitulo:2.2rem;
+$FuenteBanner:2.4rem;
 
 $DiferenciaMobile: 0.3rem;
 
 /*--------------------------VARIABLES LETRAS------------------------------------*/
 $LetraPrincipal: 'Open Sans Condensed', sans-serif;
 $LetraSecundaria:'Bebas Neue', cursive;
-$LetraBanner:'Francois One', sans-serif;
+$LetraBanner:'Julius Sans One', sans-serif;
 
 /*-----------------------VARIABLES ICONOS----------------------------------------*/
 $IconosFooter: 'facebook','phone','mail','instagram';
@@ -137,6 +137,7 @@ footer{
 .logoBlanco{
   height: 30px;
 }
+
  /*---------------------------------Texto en Imagen-------------------------------------------------------------------------------------*/
 .texto80{
     width: 100%;
@@ -227,7 +228,7 @@ footer{
     }
     
 .gradBanner{
-      background: linear-gradient(0deg, rgba(0,0,0,0.5746673669467788) 13%, rgba(255,255,255,0.05646008403361347) 61%);
+      background: linear-gradient(0deg, rgba(0, 0, 0, 0.774) 13%, rgba(26, 25, 25, 0.24) 80%);
 
      @extend.bgCoverCenter;
       height: 100vh;  
@@ -240,15 +241,7 @@ footer{
       background-size: cover;
       background-repeat: no-repeat;
     }    
-/*---------------------------------Estilos en Contenedores Flex---------------------------------------*/
 
-.contenedor{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-  }
-  
  /*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
 
 button {
@@ -389,6 +382,7 @@ button:focus{
     .logoBlanco{
       height: 20px;
     }
+
     .nav-item{
       border-bottom: solid rgba(0,0,0,0.7) .1px;
     }
