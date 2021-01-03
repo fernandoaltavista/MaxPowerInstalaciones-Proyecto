@@ -139,12 +139,15 @@ footer{
 }
  /*---------------------------------Texto en Imagen-------------------------------------------------------------------------------------*/
 .texto80{
-	
+    width: 100%;
     position: absolute;
-    top:70%;
-    left:50%;
-    transform: translate(-50%,-50%);
-    color: $ColorLetraPrimario;
+    top: 85%;
+    
+    color: $ColorLetraSecundario;
+    background-color: rgba(0,0,0,0.6);
+    margin-bottom: 0;
+    padding: 0.5rem;
+    
 }
 
 .textoBanner{
