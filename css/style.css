@@ -132,8 +132,8 @@ footer p {
 .fondoNav {
   background: rgba(243, 243, 243, 0.356); }
 
-.fondoGrad {
-  background: linear-gradient(to bottom left, #000000 0%, #292929 100%); }
+.fondoFooter {
+  background: linear-gradient(to top right, #000000 0%, #292929 100%); }
 
 .fondoNegro {
   background: linear-gradient(0deg, rgba(255, 255, 255, 0.825368) 0%, rgba(0, 0, 0, 0.962623) 0%); }
@@ -157,6 +157,10 @@ footer p {
 .banner {
   background-image: url(../img/calefaccion.jpg);
   height: 100vh; }
+
+.fondoTexto {
+  background: rgba(0, 0, 0, 0.5);
+  color: white; }
 
 .efectoTitulo {
   animation-name: aparecer;

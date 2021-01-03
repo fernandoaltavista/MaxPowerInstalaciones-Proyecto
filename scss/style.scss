@@ -9,7 +9,7 @@ $ColorTerciario:white;
 /*--------------------------VARIABLES FONDOS------------------------------------*/
 $FondoMenu:rgba(243, 243, 243, 0.356);
 $FondoNosotros:linear-gradient(147deg, #c62128 0%, #a00000 74%);
-$FondoFooter:linear-gradient(to bottom left, #000000 0%, #292929 100%);
+$FondoFooter:linear-gradient(to top right, #000000 0%, #292929 100%);
 $FondoServicio:linear-gradient(0deg, rgba(255,255,255,0.8253676470588236) 0%, rgba(0,0,0,0.9626225490196079) 0%);
 /*--------------------------VARIABLES TAMAÑOS DE LETRAS------------------------------------*/
 $FuenteCopy:.8rem;
@@ -183,7 +183,7 @@ footer{
       background: $FondoMenu;
     }
     
-.fondoGrad{
+.fondoFooter{
       background: $FondoFooter;
     }
 
@@ -215,11 +215,11 @@ footer{
     background-image: url(../img/calefaccion.jpg); 
     @extend.bgCoverCenter;
     height: 100vh;
-    
-    
-     
     }
-
+.fondoTexto{
+    background: rgba(0,0,0,0.5);
+    color: $ColorLetraSecundario;
+}
     
 .efectoTitulo{
       animation-name: aparecer;
