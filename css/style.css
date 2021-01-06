@@ -71,7 +71,7 @@ footer p {
   font-size: 2.2rem; }
 
 .fuenteCopy {
-  font-size: 0.8rem; }
+  font-size: 0.7rem; }
 
 .fuenteChica {
   font-size: 1.1rem; }
@@ -110,17 +110,6 @@ footer p {
   margin-bottom: 0;
   padding: 0.5rem; }
 
-.textoBanner {
-  position: absolute;
-  display: block;
-  top: 50%;
-  right: 3%;
-  width: 40%;
-  text-align: left;
-  transform: translate(-5%, -50%); }
-  .textoBanner p {
-    background-color: rgba(0, 0, 0, 0.3); }
-
 /*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
 .fondoRojo {
   background: linear-gradient(147deg, #c62128 0%, #a00000 74%); }
@@ -130,36 +119,36 @@ footer p {
   height: 250px; }
 
 .fondoNav {
-  background: rgba(243, 243, 243, 0.356); }
+  background: rgba(196, 196, 196, 0.253); }
 
 .fondoFooter {
   background: linear-gradient(to top right, #000000 0%, #292929 100%); }
 
 .fondoNegro {
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.825368) 0%, rgba(0, 0, 0, 0.962623) 0%); }
+  background: linear-gradient(to bottom, #000000 0%, #0f0f0f 100%); }
 
 /*---------------------------------Estilos Padding y Margenes---------------------------------------*/
-.salto {
-  display: block;
-  margin-top: 20px; }
-
 .paddingTitulo, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto {
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0; }
 
 .paddingServ {
-  padding: 50px;
-  background: linear-gradient(0deg, rgba(255, 255, 255, 0.825368) 0%, rgba(0, 0, 0, 0.962623) 0%);
+  padding: 30px;
+  background: linear-gradient(to bottom, #000000 0%, #0f0f0f 100%);
   color: white; }
 
 /*---------------------------------Estilos Banner---------------------------------------*/
 .banner {
   background-image: url(../img/calefaccion.jpg);
-  height: 100vh; }
+  height: 100vh;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; }
 
 .fondoTexto {
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.4);
   color: white; }
 
 .efectoTitulo {
@@ -167,11 +156,11 @@ footer p {
   animation-duration: 4s; }
 
 .gradBanner {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.774) 13%, rgba(26, 25, 25, 0.24) 80%);
+  background: linear-gradient(0deg, rgba(26, 25, 25, 0.24), rgba(0, 0, 0, 0.4) 30%);
   height: 100vh; }
 
 /*-----------------------------------CLASE CENTRAR BACKGROUND-------------------------------------------*/
-.bgCoverCenter, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .fondoContacto, .banner, .gradBanner {
+.bgCoverCenter, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .fondoContacto, .gradBanner {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -206,6 +195,13 @@ button .icon-menu:hover {
   transform: scale(1.1);
   filter: grayscale(0%); }
 
+.efectoRecuadro {
+  transition: all .5s ease; }
+
+.efectoRecuadro:hover {
+  border-radius: 10%;
+  box-shadow: 0 0 50px rgba(30, 31, 30, 0.233); }
+
 /*-----------------------------------------------------------------------Estilos en BS------------------------------------*/
 .navbar {
   padding: .2rem; }
@@ -217,7 +213,8 @@ button .icon-menu:hover {
   border-radius: 50%; }
 
 button:focus {
-  outline: none; }
+  outline: none;
+  box-shadow: none; }
 
 .btn-primary:focus {
   box-shadow: none;

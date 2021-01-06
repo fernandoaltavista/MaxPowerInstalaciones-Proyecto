@@ -28,11 +28,6 @@
     <link rel="stylesheet" href="owlcarousel/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="owlcarousel/assets/owl.theme.default.min.css">
 
-    <style>
-        html {
-            scroll-behavior: smooth;
-            }
-    </style>
 
 </head>
 <body>
@@ -100,27 +95,27 @@
 <!------------------------------------------SECCION SERVICIOS--------------------------------------------------------------------------------------------------->                   
     <h2 class="letraTitulo fuenteTitulo centrar py-4" data-aos="fade-right" >Que hacemos</h2>       
              
-    <div class="container-fluid">
+    <div class="container-fluid letraTitulo">
         <div class="row">
                  
             <div class="col-sm-6 col-md-3 col-lg-3 p-0 contenedorImg" width= "100%"   >
                     <a href="servicios.html#gas"><img class="efecto " height= "300px" src="https://cdn.pixabay.com/photo/2014/12/26/10/50/flame-580342_640.jpg" alt="gas"> 
-                    <p class="texto80 text-center letraTitulo fuenteNormal" data-aos="fade-up">Gas Natural</p></a>         
+                    <p class="texto80 text-center fuenteNormal" data-aos="fade-up">Gas Natural</p></a>         
             </div>   
 
             <div class="col-sm-6 col-md-3 col-lg-3 p-0 contenedorImg" width= "100%"  >
                     <a href="servicios.html#agua"><img class="efecto " height= "300px"  src="https://cdn.pixabay.com/photo/2017/06/29/15/47/drain-2454608_640.jpg" alt="canilla"></a>
-                    <p class="texto80 text-center letraTitulo fuenteNormal" data-aos="fade-up">Aguas Sanitarias</p>
+                    <p class="texto80 text-center fuenteNormal" data-aos="fade-up">Aguas Sanitarias</p>
             </div>
             
             
             <div class="col-sm-6 col-md-3 col-lg-3 p-0 contenedorImg" width= "100%">
                     <a href="servicios.html#aire"><img class = "efecto " height= "300px"  src="https://cdn.pixabay.com/photo/2019/05/15/10/16/air-conditioner-4204637_960_720.jpg" alt="aire-acondicionado"></a>
-                    <p class= "texto80 text-center letraTitulo fuenteNormal" data-aos="fade-up">Aire Acondicionado</p>
+                    <p class= "texto80 text-center fuenteNormal" data-aos="fade-up">Aire Acondicionado</p>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 p-0 contenedorImg" width= "100%" >
                     <a href="servicios.html#caldera"><img class= "efecto " height= "300px" src="https://cdn.pixabay.com/photo/2014/01/23/17/11/radiator-250558_960_720.jpg" alt="radiador"></a>
-                    <p class = "texto80 text-center letraTitulo fuenteNormal" data-aos="fade-up">Calderas</p>
+                    <p class = "texto80 text-center fuenteNormal" data-aos="fade-up">Calderas</p>
             </div>
         </div>
     </div>         
@@ -128,10 +123,11 @@
 <!---------------------------------------------------------------SECCION NOSOTROS------------------------------------------------------------>
 
          <div class="centrar fondoRojo nosotros p-3">               <!-----------BEM-1------------>
-                 <p class="nosotros__texto"> Somos una empresa joven dedicada a brindarte el mejor servicio. Atendemos Urgencias las 24 horas los 365 días del año. Atendemos a Particulares y Empresas.</p>
+                 <p class="nosotros__texto"> Somos una empresa joven dedicada a brindarte el mejor servicio.Contamos con un equipo matriculado en todas los rubros. Atendemos en la ciudad de Mercedes (BA) y sus alrededores.</p>
                  <a href="nosotros.html"><button class=" btn btn-danger btn-lg nosotros__boton ">CONOCENOS</button> </a>    <!--Futuro Boton que haga de enlace a Nosotros-->
         </div>
 
+<!---------------------------------------------------------------SECCION PRODUCTOS------------------------------------------------------------>
 
         <h2 class="letraTitulo centrar py-4 fuenteTitulo" data-aos="fade-right" >Productos</h2>
 
@@ -177,29 +173,30 @@
                             <!-- Modal body -->
                             <div class="modal-body ">
                                 <form>
-                                      <div class="form-group bg-light letraPrincipal fuenteNormal">
-                                           <input type="text" class="form-control" placeholder="Nombre" size="40" required >
-                                         </div>
+                                            <div class="form-group bg-light letraPrincipal fuenteNormal">
+                                                <input type="text" class="form-control" placeholder="Nombre" size="40" required >
+                                            </div>
                                          
-                                              <div class="form-group">
-                                              <input type="email" class="form-control bg-light" placeholder="E-mail" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
-                                              required size="25" >
-                                              
-                                             </div>
+                                            <div class="form-group">
+                                                    <input type="email" class="form-control bg-light" placeholder="E-mail" pattern="[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*@[a-zA-Z0-9_]+([.][a-zA-Z0-9_]+)*[.][a-zA-Z]{1,5}"
+                                                    required size="25" >
+                                            </div>
                                              
-                                              <div class="form-group bg-light">
+                                            <div class="form-group bg-light">
                                                 <input type="text" class="form-control" placeholder="Telefono"  required >
-                                             </div>
-                                             
-                                             <div class="form-group bg-light">
+                                            </div>
+
+                                            <div class="form-group bg-light">
+                                                <input type="text" class="form-control" placeholder="Ciudad"  required >
+                                            </div>
+
+                                            <div class="form-group bg-light">
                                                 <textarea class= "form-control letraPrincipal" rows="11" name="Consulta" placeholder="Deje su mensaje" required  ></textarea>
-                                             </div>
-                                                  <div class="form-group py-2">
-                                                  
+                                            </div>
+
+                                            <div class="form-group py-2">       
                                                 <input class = "btn btn-danger" style="font-size: 20px" type="submit">
-                                                    
-                                           
-                                                </div>
+                                            </div>
                                            
                                         
                              </form>
@@ -219,20 +216,20 @@
             <div class="contacto container-fluid py-3 letraPrincipal fuenteNormal">       <!-----------BEM-3------------>
                <div class="row">
 
-                 <div class="col-sm-6 col-lg-3 py-2 centrar"> 
+                 <div class="col-sm-6 col-lg-3 py-2 efectoRecuadro centrar"> 
                   <a href="tel:+5492324504980" target="_blank"><img src="icon/telefono.svg" alt="" class="logo"></a>
                     <p class="mb-1">Llamanos</p>
                     <p class="fuenteChica">tel:2324504980</p>
                  
                   </div>
 
-                 <div class="col-sm-6  col-lg-3 py-2 centrar">
+                 <div class="col-sm-6  col-lg-3 py-2 efectoRecuadro centrar">
                   <a  href="mailto:info@maxpowerinstalaciones.com.ar" target="_blank"><img src="icon/email.svg" class="logo" alt=""></a>
                   <p class="mb-1">Mandanos un mail</p>
                   <p class="fuenteChica">info@maxpowerinstalaciones.com.ar</p>
                  </div>
 
-                 <div class="col-sm-6  col-lg-3 py-2 centrar">
+                 <div class="col-sm-6  col-lg-3 py-2 efectoRecuadro centrar">
                   <a href="https://www.facebook.com/maxpowerinstalaciones" target="_blank"><img src="icon/face.svg" class="logo" alt=""></a>
                   
                   <p class="mb-1">Encontranos en Facebook</p>
@@ -240,7 +237,7 @@
                 
                  </div>
 
-                 <div class="col-sm-6 col-lg-3 py-2 centrar">
+                 <div class="col-sm-6 col-lg-3 py-2 efectoRecuadro centrar">
                   <a href="https://www.instagram.com/maxpower_instalaciones/" target="_blank"><img src="icon/insta.svg" class="logo" alt=""></a>
                   <p class="mb-1">Buscanos en Instagram</p>
                   <p class="fuenteChica">/maxpower_instalaciones</p>
@@ -259,7 +256,7 @@
 <div class="container">
 	
 
-	<a class="fixed-bottom mb-3 mr-2" href="https://api.whatsapp.com/send?phone=542324522729" target="_blank" style="left: auto"><img src="img/wsp.png" class="logo"></a>
+	<a class="fixed-bottom mb-3 mr-3" href="https://api.whatsapp.com/send?phone=542324522729" target="_blank" style="left: auto"><img src="img/wsp.png" class="logo"></a>
 	
 </div>
                   
@@ -284,11 +281,11 @@
                 </div>
                 <div class="col-md-3 contactoFooter">                               <!-----------BEM-4------------>
                     <p  class="textoBlanco fuenteChica letraTitulo text-center">Contacto</p>
-                    <ul class="fuenteChica textoBlanco navbar">
-                      <li><a class=" icon-phone ml-2" href="tel:+5492324545010" target="_blank"></a></li>
-                      <li ><a class="icon-mail ml-2" href="mailto:info@maxpowerinstalaciones.com.ar" target="_blank"></a> </li>
-                      <li><a class="icon-facebook ml-2" href="https://www.facebook.com/maxpowerinstalaciones" target="_blank"></a> </li>
-                      <li><a class="icon-instagram ml-2" href="https://www.instagram.com/maxpower_instalaciones/" target="_blank"></a></li>
+                    <ul class="fuenteChica textoBlanco d-flex justify-content-center">
+                      <li><a class=" icon-phone" href="tel:+5492324545010" target="_blank"></a></li>
+                      <li ><a class="icon-mail ml-4" href="mailto:info@maxpowerinstalaciones.com.ar" target="_blank"></a> </li>
+                      <li><a class="icon-facebook ml-4" href="https://www.facebook.com/maxpowerinstalaciones" target="_blank"></a> </li>
+                      <li><a class="icon-instagram ml-4" href="https://www.instagram.com/maxpower_instalaciones/" target="_blank"></a></li>
                    </ul>
     
     

@@ -6,13 +6,14 @@ $ColorPrincipal:#BF1313;
 $ColorSecundario:black;
 $ColorTerciario:white;
 
+
 /*--------------------------VARIABLES FONDOS------------------------------------*/
-$FondoMenu:rgba(243, 243, 243, 0.356);
+$FondoMenu:rgba(196, 196, 196, 0.253);
 $FondoNosotros:linear-gradient(147deg, #c62128 0%, #a00000 74%);
 $FondoFooter:linear-gradient(to top right, #000000 0%, #292929 100%);
-$FondoServicio:linear-gradient(0deg, rgba(255,255,255,0.8253676470588236) 0%, rgba(0,0,0,0.9626225490196079) 0%);
+$FondoServicio:linear-gradient(to bottom, #000000 0%, #0f0f0f 100%);
 /*--------------------------VARIABLES TAMAÑOS DE LETRAS------------------------------------*/
-$FuenteCopy:.8rem;
+$FuenteCopy:.7rem;
 $FuenteChica:1.1rem;
 $FuenteMediana:1.4rem;
 $FuenteGrande:1.7rem;
@@ -83,6 +84,7 @@ footer{
   }
 }
 
+
 /*---------------------------------Estilos en Fuentes---------------------------------------*/
 .bordeDoble{
     border-top:double 3px $ColorLetraPrimario ; 
@@ -151,20 +153,6 @@ footer{
     
 }
 
-.textoBanner{
-      position:absolute;
-      display: block;
-      top: 50%;
-      right: 3%; 
-      width: 40%;
-      text-align: left;
-      transform: translate(-5%,-50%);
-
-      p{
-        background-color: rgba(0,0,0,0.3);
-        
-      }
-}
 
   /*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
 
@@ -187,23 +175,18 @@ footer{
 .fondoFooter{
       background: $FondoFooter;
     }
-
 .fondoNegro{
   background: $FondoServicio;
-} 
+}
 /*---------------------------------Estilos Padding y Margenes---------------------------------------*/
 
-.salto {
-      display: block;
-      margin-top: 20px;
-    }
 .paddingTitulo{
         padding-top: 100px;
         padding-bottom: 50px;
         margin: 0;
 }  
 .paddingServ{
-      padding: 50px;
+      padding: 30px;
       background: $FondoServicio;
       color: white;
       
@@ -214,11 +197,14 @@ footer{
 .banner{
       
     background-image: url(../img/calefaccion.jpg); 
-    @extend.bgCoverCenter;
     height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 .fondoTexto{
-    background: rgba(0,0,0,0.5);
+    background: rgba(0,0,0,0.4);
     color: $ColorLetraSecundario;
 }
     
@@ -228,7 +214,7 @@ footer{
     }
     
 .gradBanner{
-      background: linear-gradient(0deg, rgba(0, 0, 0, 0.774) 13%, rgba(26, 25, 25, 0.24) 80%);
+      background: linear-gradient(0deg, rgba(26, 25, 25, 0.24) ,rgba(0, 0, 0, 0.4) 30%);
 
      @extend.bgCoverCenter;
       height: 100vh;  
@@ -274,7 +260,14 @@ button {
     transform: scale(1.1);
     filter:grayscale(0%) ;
   }
-  
+
+.efectoRecuadro{
+  transition: all .5s ease;
+}
+.efectoRecuadro:hover{
+    border-radius: 10%;
+    box-shadow: 0 0 50px rgba(30, 31, 30, 0.233);
+  }
 /*-----------------------------------------------------------------------Estilos en BS------------------------------------*/
 .navbar{
   padding: .2rem;
@@ -292,6 +285,7 @@ button {
 button:focus{
                       
       outline:none;
+      box-shadow: none;
       
     }
 .btn-primary:focus{
