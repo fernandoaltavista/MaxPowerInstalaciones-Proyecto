@@ -98,7 +98,7 @@ footer p {
   height: 50px; }
 
 .logoBlanco {
-  height: 30px; }
+  height: 50px; }
 
 /*---------------------------------Texto en Imagen-------------------------------------------------------------------------------------*/
 .texto80 {
@@ -143,9 +143,8 @@ footer p {
   background-image: url(../img/calefaccion.jpg);
   height: 100vh;
   background-attachment: fixed;
-  background-position: center;
+  background-position: center center;
   background-repeat: no-repeat;
-  -o-background-size: cover;
   background-size: cover; }
 
 .fondoTexto {
@@ -270,6 +269,6 @@ button:focus {
   .logo {
     height: 40px; }
   .logoBlanco {
-    height: 20px; }
+    height: 40px; }
   .nav-item {
     border-bottom: solid rgba(0, 0, 0, 0.7) 0.1px; } }
