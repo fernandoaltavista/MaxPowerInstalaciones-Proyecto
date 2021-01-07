@@ -199,7 +199,7 @@ button .icon-menu:hover {
   transition: all .5s ease; }
 
 .efectoRecuadro:hover {
-  border-radius: 10%;
+  border-radius: 5%;
   box-shadow: 0 0 50px rgba(30, 31, 30, 0.233); }
 
 /*-----------------------------------------------------------------------Estilos en BS------------------------------------*/
