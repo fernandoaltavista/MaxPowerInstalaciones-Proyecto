@@ -200,12 +200,7 @@ footer{
       
     background-image: url(../img/calefaccion.jpg); 
     height: 100vh;
-    background-attachment: fixed;
-    background-position: center center;
-    background-repeat: no-repeat;
-  
-    
-    background-size: cover;
+    @extend.bgCoverCenter;
     
     }
 .fondoTexto{
