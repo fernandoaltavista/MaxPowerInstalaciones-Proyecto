@@ -89,6 +89,7 @@ footer{
 .bordeDoble{
     border-top:double 3px $ColorLetraPrimario ; 
     width: 50%;
+    text-align: center;
   }
   
 .bordeSimple{
@@ -169,7 +170,13 @@ footer{
       @extend.bgCoverCenter;
       height: 250px;
     }
-    
+
+.fondoRedes{
+
+  background: linear-gradient(to top, rgba(243, 241, 241, 0.753),rgba(223, 219, 219, 0.815)), url(https://images.pexels.com/photos/2388936/pexels-photo-2388936.jpeg?cs=srgb&dl=pexels-jonathan-robles-2388936.jpg&fm=jpg);
+  @extend.bgCoverCenter;
+  border-radius: 2%;
+}    
 .fondoNav{
       background: $FondoMenu;
     }
@@ -198,7 +205,7 @@ footer{
     
 .banner{
       
-    background-image: url(../img/calefaccion.jpg); 
+    background-image: url(../img/calefaccion.webp); 
     height: 100vh;
     @extend.bgCoverCenter;
     

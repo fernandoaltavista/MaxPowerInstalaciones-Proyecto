@@ -53,7 +53,8 @@ footer p {
 /*---------------------------------Estilos en Fuentes---------------------------------------*/
 .bordeDoble {
   border-top: double 3px black;
-  width: 50%; }
+  width: 50%;
+  text-align: center; }
 
 .bordeSimple {
   border-top: solid 0.5px white; }
@@ -121,6 +122,10 @@ footer p {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(https://cdn.pixabay.com/photo/2015/05/31/10/55/man-791049_960_720.jpg);
   height: 250px; }
 
+.fondoRedes {
+  background: linear-gradient(to top, rgba(243, 241, 241, 0.753), rgba(223, 219, 219, 0.815)), url(https://images.pexels.com/photos/2388936/pexels-photo-2388936.jpeg?cs=srgb&dl=pexels-jonathan-robles-2388936.jpg&fm=jpg);
+  border-radius: 2%; }
+
 .fondoNav {
   background: rgba(196, 196, 196, 0.253); }
 
@@ -143,7 +148,7 @@ footer p {
 
 /*---------------------------------Estilos Banner---------------------------------------*/
 .banner {
-  background-image: url(../img/calefaccion.jpg);
+  background-image: url(../img/calefaccion.webp);
   height: 100vh; }
 
 .fondoTexto {
@@ -159,7 +164,7 @@ footer p {
   height: 100vh; }
 
 /*-----------------------------------CLASE CENTRAR BACKGROUND-------------------------------------------*/
-.bgCoverCenter, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .fondoContacto, .banner, .gradBanner {
+.bgCoverCenter, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .fondoContacto, .fondoRedes, .banner, .gradBanner {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
