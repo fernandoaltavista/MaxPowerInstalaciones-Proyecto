@@ -53,6 +53,9 @@ a:hover{
     text-decoration: none;
     color: $ColorPrincipal ;
 }
+a:active{
+  border: none;
+}
 form{
     input{
        font-family: $LetraPrincipal;
@@ -79,7 +82,9 @@ footer{
   .padding-#{$seccion}{
     background:linear-gradient(0deg, rgba(199,8,8,0.6530987394957983) 100%, rgba(0,0,0,0.9710259103641457) 100%),url('../img/#{$seccion}.jpg');
     @extend.bgCoverCenter;
-    @extend.paddingTitulo;
+    padding-top: 100px;
+    padding-bottom: 50px;
+    margin: 0;
     
   }
 }
@@ -89,12 +94,16 @@ footer{
 .bordeDoble{
     border-top:double 3px $ColorLetraPrimario ; 
     width: 50%;
-    text-align: center;
+    
   }
   
 .bordeSimple{
     border-top: solid 0.5px $ColorLetraSecundario;
   }
+
+.bordeRedondo{
+  border-radius: 2%;
+}
 .centrar{
      text-align: center;
   }
@@ -140,6 +149,9 @@ footer{
 .logoBlanco{
   height: 50px;
 }
+.logoMarcas{
+  height: 60px;
+}
 .logoFooter{
   height: 30px;
 }
@@ -175,7 +187,7 @@ footer{
 
   background: linear-gradient(to top, rgba(243, 241, 241, 0.753),rgba(223, 219, 219, 0.815)), url(https://images.pexels.com/photos/2388936/pexels-photo-2388936.jpeg?cs=srgb&dl=pexels-jonathan-robles-2388936.jpg&fm=jpg);
   @extend.bgCoverCenter;
-  border-radius: 2%;
+ @extend.bordeRedondo;
 }    
 .fondoNav{
       background: $FondoMenu;
@@ -189,23 +201,18 @@ footer{
 }
 /*---------------------------------Estilos Padding y Margenes---------------------------------------*/
 
-.paddingTitulo{
-        padding-top: 100px;
-        padding-bottom: 50px;
-        margin: 0;
-}  
 .paddingServ{
       padding: 30px;
       background: $FondoServicio;
       color: white;
-      
+      @extend.bordeRedondo;
     }    
    
 /*---------------------------------Estilos Banner---------------------------------------*/
     
 .banner{
       
-    background-image: url(../img/calefaccion.jpg); 
+    background-image: url(../img/calefaccion2.jpg); 
     height: 100vh;
     @extend.bgCoverCenter;
     
@@ -382,6 +389,9 @@ button:focus{
     }
     .logoBlanco{
       height: 40px;
+    }
+    .logoMarcas{
+      height: 35px;
     }
     .logoFooter{
       height: 25px;

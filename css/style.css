@@ -22,6 +22,9 @@ a:hover {
   text-decoration: none;
   color: #BF1313; }
 
+a:active {
+  border: none; }
+
 form input {
   font-family: "Open Sans Condensed", sans-serif; }
 
@@ -39,25 +42,39 @@ footer p {
   margin-bottom: 0; }
 
 .padding-nosotros {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/nosotros.jpg"); }
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/nosotros.jpg");
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin: 0; }
 
 .padding-servicios {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/servicios.jpg"); }
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/servicios.jpg");
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin: 0; }
 
 .padding-productos {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/productos.jpg"); }
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/productos.jpg");
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin: 0; }
 
 .padding-contacto {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/contacto.jpg"); }
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/contacto.jpg");
+  padding-top: 100px;
+  padding-bottom: 50px;
+  margin: 0; }
 
 /*---------------------------------Estilos en Fuentes---------------------------------------*/
 .bordeDoble {
   border-top: double 3px black;
-  width: 50%;
-  text-align: center; }
+  width: 50%; }
 
 .bordeSimple {
   border-top: solid 0.5px white; }
+
+.bordeRedondo, .fondoRedes, .paddingServ {
+  border-radius: 2%; }
 
 .centrar {
   text-align: center; }
@@ -101,6 +118,9 @@ footer p {
 .logoBlanco {
   height: 50px; }
 
+.logoMarcas {
+  height: 60px; }
+
 .logoFooter {
   height: 30px; }
 
@@ -123,8 +143,7 @@ footer p {
   height: 250px; }
 
 .fondoRedes {
-  background: linear-gradient(to top, rgba(243, 241, 241, 0.753), rgba(223, 219, 219, 0.815)), url(https://images.pexels.com/photos/2388936/pexels-photo-2388936.jpeg?cs=srgb&dl=pexels-jonathan-robles-2388936.jpg&fm=jpg);
-  border-radius: 2%; }
+  background: linear-gradient(to top, rgba(243, 241, 241, 0.753), rgba(223, 219, 219, 0.815)), url(https://images.pexels.com/photos/2388936/pexels-photo-2388936.jpeg?cs=srgb&dl=pexels-jonathan-robles-2388936.jpg&fm=jpg); }
 
 .fondoNav {
   background: rgba(196, 196, 196, 0.253); }
@@ -136,11 +155,6 @@ footer p {
   background: linear-gradient(to bottom, #000000 0%, #0f0f0f 100%); }
 
 /*---------------------------------Estilos Padding y Margenes---------------------------------------*/
-.paddingTitulo, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto {
-  padding-top: 100px;
-  padding-bottom: 50px;
-  margin: 0; }
-
 .paddingServ {
   padding: 30px;
   background: linear-gradient(to bottom, #000000 0%, #0f0f0f 100%);
@@ -148,7 +162,7 @@ footer p {
 
 /*---------------------------------Estilos Banner---------------------------------------*/
 .banner {
-  background-image: url(../img/calefaccion.jpg);
+  background-image: url(../img/calefaccion2.jpg);
   height: 100vh; }
 
 .fondoTexto {
@@ -274,6 +288,8 @@ button:focus {
     height: 40px; }
   .logoBlanco {
     height: 40px; }
+  .logoMarcas {
+    height: 35px; }
   .logoFooter {
     height: 25px; }
   .nav-item {
