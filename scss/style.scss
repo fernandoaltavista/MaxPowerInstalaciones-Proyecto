@@ -83,7 +83,7 @@ footer{
 
 @each $seccion in nosotros,servicios,productos,contacto {
   .padding-#{$seccion}{
-    background:linear-gradient(0deg, rgba(199,8,8,0.6530987394957983) 100%, rgba(0,0,0,0.9710259103641457) 100%),url('../img/#{$seccion}.jpg');
+    background:linear-gradient(0deg, rgba(199,8,8,0.6530987394957983) 100%, rgba(0,0,0,0.9710259103641457) 100%),url('../img/#{$seccion}.jpeg');
     @extend.bgCoverCenter;
     padding-top: 100px;
     padding-bottom: 50px;
@@ -178,7 +178,7 @@ footer{
 
 .fondoContacto{
       
-      background: linear-gradient(to top, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(https://cdn.pixabay.com/photo/2015/05/31/10/55/man-791049_960_720.jpg);
+      background: linear-gradient(to top, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(../img/contacto.jpeg);
       @extend.bgCoverCenter;
       height: 250px;
     }
@@ -211,7 +211,7 @@ footer{
     
 .banner{
       
-    background-image: url(../img/calefaccion2.jpg); 
+    background-image: url(../img/banner.jpg); 
     height: 100vh;
     @extend.bgCoverCenter;
     

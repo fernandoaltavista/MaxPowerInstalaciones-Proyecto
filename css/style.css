@@ -45,25 +45,25 @@ footer p {
   margin-bottom: 0; }
 
 .padding-nosotros {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/nosotros.jpg");
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/nosotros.jpeg");
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0; }
 
 .padding-servicios {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/servicios.jpg");
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/servicios.jpeg");
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0; }
 
 .padding-productos {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/productos.jpg");
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/productos.jpeg");
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0; }
 
 .padding-contacto {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/contacto.jpg");
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/contacto.jpeg");
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0; }
@@ -139,7 +139,7 @@ footer p {
   background: linear-gradient(147deg, #c62128 0%, #a00000 74%); }
 
 .fondoContacto {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(https://cdn.pixabay.com/photo/2015/05/31/10/55/man-791049_960_720.jpg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/contacto.jpeg);
   height: 250px; }
 
 .fondoRedes {
@@ -162,7 +162,7 @@ footer p {
 
 /*---------------------------------Estilos Banner---------------------------------------*/
 .banner {
-  background-image: url(../img/calefaccion2.jpg);
+  background-image: url(../img/banner.jpg);
   height: 100vh; }
 
 .fondoTexto {
