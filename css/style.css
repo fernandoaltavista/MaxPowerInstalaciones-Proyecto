@@ -25,6 +25,9 @@ a:hover {
 a:active {
   border: none; }
 
+a:focus {
+  border: none; }
+
 form input {
   font-family: "Open Sans Condensed", sans-serif; }
 
@@ -72,9 +75,6 @@ footer p {
 
 .bordeSimple {
   border-top: solid 0.5px white; }
-
-.bordeRedondo, .fondoRedes, .paddingServ {
-  border-radius: 2%; }
 
 .centrar {
   text-align: center; }
@@ -152,12 +152,12 @@ footer p {
   background: linear-gradient(to top right, #000000 0%, #292929 100%); }
 
 .fondoNegro {
-  background: linear-gradient(to bottom, #000000 0%, #0f0f0f 100%); }
+  background: linear-gradient(to left, #000000, #434343); }
 
 /*---------------------------------Estilos Padding y Margenes---------------------------------------*/
 .paddingServ {
   padding: 30px;
-  background: linear-gradient(to bottom, #000000 0%, #0f0f0f 100%);
+  background: linear-gradient(to left, #000000, #434343);
   color: white; }
 
 /*---------------------------------Estilos Banner---------------------------------------*/
