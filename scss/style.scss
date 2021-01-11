@@ -83,7 +83,7 @@ footer{
 
 @each $seccion in nosotros,servicios,productos,contacto {
   .padding-#{$seccion}{
-    background:linear-gradient(0deg, rgba(199,8,8,0.6530987394957983) 100%, rgba(0,0,0,0.9710259103641457) 100%),url('../img/#{$seccion}.jpeg');
+    background:linear-gradient(0deg, rgba(199,8,8,0.6530987394957983) 100%, rgba(0,0,0,0.9710259103641457) 100%),url('../img/#{$seccion}.webp');
     @extend.bgCoverCenter;
     padding-top: 100px;
     padding-bottom: 50px;
@@ -159,7 +159,7 @@ footer{
 .texto80{
     width: 100%;
     position: absolute;
-    top: 85%;
+    top: 86%;
     
     color: $ColorLetraSecundario;
     background-color: rgba(0,0,0,0.6);
@@ -178,14 +178,14 @@ footer{
 
 .fondoContacto{
       
-      background: linear-gradient(to top, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(../img/contacto.jpeg);
+      background: linear-gradient(to top, rgba(0,0,0,0.4),rgba(0,0,0,0.8)), url(../img/contacto.webp);
       @extend.bgCoverCenter;
       height: 250px;
     }
 
 .fondoRedes{
 
-  background: linear-gradient(to top, rgba(243, 241, 241, 0.753),rgba(223, 219, 219, 0.815)), url(https://images.pexels.com/photos/2388936/pexels-photo-2388936.jpeg?cs=srgb&dl=pexels-jonathan-robles-2388936.jpg&fm=jpg);
+  background: linear-gradient(to top, rgba(243, 241, 241, 0.753),rgba(223, 219, 219, 0.815)), url(../img/redes.webp);
   @extend.bgCoverCenter;
  
 }    
@@ -211,7 +211,7 @@ footer{
     
 .banner{
       
-    background-image: url(../img/banner.jpg); 
+    background-image: url(../img/banner.webp); 
     height: 100vh;
     @extend.bgCoverCenter;
     

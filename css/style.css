@@ -45,25 +45,25 @@ footer p {
   margin-bottom: 0; }
 
 .padding-nosotros {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/nosotros.jpeg");
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/nosotros.webp");
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0; }
 
 .padding-servicios {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/servicios.jpeg");
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/servicios.webp");
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0; }
 
 .padding-productos {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/productos.jpeg");
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/productos.webp");
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0; }
 
 .padding-contacto {
-  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/contacto.jpeg");
+  background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/contacto.webp");
   padding-top: 100px;
   padding-bottom: 50px;
   margin: 0; }
@@ -128,7 +128,7 @@ footer p {
 .texto80 {
   width: 100%;
   position: absolute;
-  top: 85%;
+  top: 86%;
   color: white;
   background-color: rgba(0, 0, 0, 0.6);
   margin-bottom: 0;
@@ -139,11 +139,11 @@ footer p {
   background: linear-gradient(147deg, #c62128 0%, #a00000 74%); }
 
 .fondoContacto {
-  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/contacto.jpeg);
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/contacto.webp);
   height: 250px; }
 
 .fondoRedes {
-  background: linear-gradient(to top, rgba(243, 241, 241, 0.753), rgba(223, 219, 219, 0.815)), url(https://images.pexels.com/photos/2388936/pexels-photo-2388936.jpeg?cs=srgb&dl=pexels-jonathan-robles-2388936.jpg&fm=jpg); }
+  background: linear-gradient(to top, rgba(243, 241, 241, 0.753), rgba(223, 219, 219, 0.815)), url(../img/redes.webp); }
 
 .fondoNav {
   background: rgba(196, 196, 196, 0.253); }
@@ -162,7 +162,7 @@ footer p {
 
 /*---------------------------------Estilos Banner---------------------------------------*/
 .banner {
-  background-image: url(../img/banner.jpg);
+  background-image: url(../img/banner.webp);
   height: 100vh; }
 
 .fondoTexto {
