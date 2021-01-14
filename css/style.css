@@ -180,8 +180,7 @@ footer p {
 /*---------------------------------Estilos Banner---------------------------------------*/
 .banner {
   background-image: url(../img/banner.webp);
-  height: 100vh;
-  background-attachment: fixed; }
+  height: 100vh; }
 
 .fondoTexto {
   background: rgba(0, 0, 0, 0.4);
