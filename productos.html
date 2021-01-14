@@ -29,7 +29,7 @@
 <body>
     <header>
     <div class="container-fluid ">          
-        <nav class="navbar navbar-expand-md shadow-lg fixed-top bg-light letraTitulo fuenteNormal">
+        <nav class="navbar navbar-expand-md shadow-lg fixed-top menu bg-light ">
                    
           <a href="index.html" class="navbar-brand" ><img src="img/logo-max.png" class="logo" alt="logo"></a>
              
@@ -63,18 +63,19 @@
     </header>
 
     
-    <h2 class="letraTitulo centrar fuenteTitulo text-white padding-productos mt-2"> Productos</h2>
+    <h2 class="padding-productos mt-2"> Productos</h2>
     
 
-    <div class=" container-fluid  letraPrincipal">
+    <div class=" container-fluid productos">
       <div class="row">
           <div class="col-md-6 p-4">    
-                <h3 class="fuenteNormal p-2">En MAX POWER INSTALACIONES somos distribuidores y servicio técnico oficial <a href="http://www.peisa.com.ar" target="_blank">
+                <h3 class="productos__texto p-2">En MAX POWER INSTALACIONES somos distribuidores y servicio técnico oficial <a href="http://www.peisa.com.ar" target="_blank">
                   <img src="img/logo-peisa.png" alt="logo-peisa" height="30px"></a></h3>
-                <h3 class="fuenteNormal p-2">Con más de 30 años de trayectoria en el mercado, PEISA 
+                <h3 class="productos__texto p-2">Con más de 30 años de trayectoria en el mercado, PEISA 
                   es una empresa líder en tecnología de climatización por agua y garantiza a sus clientes, que todos sus productos han sido diseñados, construidos, inspeccionados y probados bajo rigurosas normas de calidad y seguridad</h3>
                 <p class="bordeDoble mr-auto ml-auto"></p>
-                <h3 class="fuenteNormal p-2">Como empresa referente, en el concepto de ahorro energético, ofrece productos y servicios con máxima eficiencia, que aseguran un rápido retorno de su inversión. </h3>
+
+                <h3 class="productos__texto p-2">Como empresa referente, en el concepto de ahorro energético, ofrece productos y servicios con máxima eficiencia, que aseguran un rápido retorno de su inversión. </h3>
           </div>
           <div class="col-md-3 p-4 align-self-center text-center">
 
@@ -245,7 +246,7 @@
 
       <div class="col-6 col-md-4 col-lg-4 p-2 efectoRecuadro">
           <a href="#" data-toggle="modal" data-target="#myModal4">
-          <img src="img/termo-peisa.jpeg" alt="termotanque" class="mx-auto d-block h-75 w-75" height="250px">
+          <img src="img/termo-peisa.webp" alt="termotanque" class="mx-auto d-block h-75 w-75" height="250px">
           <h3 class="ml-4 mt-4 fuenteNormal letraTitulo">Termotanque electrico</h3> </a>
            <!-- Trigger the modal with a button -->
 
@@ -400,8 +401,8 @@
 
   <div class="container-fluid py-3">
     <div class="row">
-      <div class="col-12 letraPrincipal align-self-center text-center">
-          <h2 class="fuenteNormal">Trabajamos con las primeras marcas del sector para ofrecer a nuestros clientes el mejor resultado.</h2>
+      <div class="col-12 productos align-self-center text-center">
+          <h2 class="productos__texto">Trabajamos con las primeras marcas del sector para ofrecer a nuestros clientes el mejor resultado.</h2>
       </div>
 
     </div>
@@ -436,9 +437,9 @@
      
   </div>
 
-  <div class="container-fluid py-4 letraTitulo text-white fondoRojo">
+  <div class="container-fluid productos py-4 fondoRojo">
     <div class="row">
-    <h3 class="fuenteNormal p-3 mx-auto">Comuníquese con nosotros por mas productos y descubra como ahorrar energía y dinero. <a href="tel:+542324545080" target="_blank" ><img src="icon/telefono-blanco.png" alt="telefono" height="25px" class="mr-2"></a></h3>
+    <h3 class="productos__contacto p-3 mx-auto">Comuníquese con nosotros por mas productos y descubra como ahorrar energía y dinero. <a href="tel:+542324545080" target="_blank" ><img src="icon/telefono-blanco.png" alt="telefono" height="25px" class="mr-2"></a></h3>
     </div>
   </div>
 
@@ -449,18 +450,18 @@
 	
 </div>
                   
- <!---------------------------------------------------------------FOOTER------------------------------------------------------------>
+<!---------------------------------------------------------------FOOTER------------------------------------------------------------>
 
 <footer class="letraPrincipal fondoFooter bordeSimple">  <!--Pie de pagina con Menu y Copyright-->
   <div class="container py-3 ">
       <div class="row">
       
           <div class="col-md-4 py-3 text-center">
-            <p class="letraTitulo textoBlanco fuenteChica">Trabajamos con</p>
+            <p class="footer__titulo">Trabajamos con</p>
             <div class="col-12 p-0">
-              <img src="img/peisa-footer.png" alt="" height="35px" class="logoFooter m-1">
-              <img src="img/fuisogas-footer.png" alt="" height="35px" class="logoFooter m-1">
-              <img src="img/sigas-footer.png" alt="" height="35px" class="logoFooter m-1">
+                  <img src="img/peisa-footer.png" alt="" height="35px" class="logoFooter m-1">
+                  <img src="img/fuisogas-footer.png" alt="" height="35px" class="logoFooter m-1">
+                  <img src="img/sigas-footer.png" alt="" height="35px" class="logoFooter m-1">
 
             </div>
 
@@ -470,15 +471,17 @@
               <img src="img/acqua-footer.png" alt=""  class="logoFooter m-1">
               
             </div>
-          </div>
+
+          </div> 
+
           <div class="col-md-4 text-center align-self-center py-3">
             
-            <a href="index.html"><img src="img/logo-maxblanco.png" class="logoBlanco"></a>
+            <a href="index.html"><img src="img/logo-maxblanco.png" class="logo"></a>
           </div>
 
           <div class="col-md-4 py-3">
-              <p  class="letraTitulo textoBlanco fuenteChica text-center">Comunicate</p>
-             <ul class="fuenteGrande textoBlanco d-flex justify-content-center">
+              <p  class="footer__titulo">Comunicate</p>
+             <ul class="footer__redes d-flex justify-content-center">
               <li><a class=" icon-phone " href="tel:+542324545080" target="_blank"></a></li>
               <li ><a class="icon-mail ml-4" href="mailto:info@maxpowerinstalaciones.com.ar" target="_blank"></a> </li>
               <li><a class="icon-facebook ml-4" href="https://www.facebook.com/maxpowerinstalaciones" target="_blank"></a> </li>
@@ -494,7 +497,7 @@
   </div>
 
 
-      <div class="fuenteCopy centrar bordeSimple">            
+      <div class="footer__copy">            
                    <p>Copyright © 2020 MAX POWER. Diseño por Fernando Altavista</p>
       </div>
 </footer>

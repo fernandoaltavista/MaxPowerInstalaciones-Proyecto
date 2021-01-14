@@ -6,12 +6,11 @@ $ColorPrincipal:#BF1313;
 $ColorSecundario:black;
 $ColorTerciario:white;
 
-
 /*--------------------------VARIABLES FONDOS------------------------------------*/
-$FondoMenu:rgba(196, 196, 196, 0.253);
+$FondoMenu:rgba(243, 243, 243, 0.719);
 $FondoNosotros:linear-gradient(147deg, #c62128 0%, #a00000 74%);
 $FondoFooter:linear-gradient(to top right, #000000 0%, #292929 100%);
-$FondoServicio: linear-gradient(to left, #000000, #434343);
+$FondoServicio: linear-gradient(to left, #000000, #111010);
 /*--------------------------VARIABLES TAMAÑOS DE LETRAS------------------------------------*/
 $FuenteCopy:.7rem;
 $FuenteChica:1.1rem;
@@ -59,6 +58,11 @@ a:active{
 a:focus{
   border: none;
 }
+button {
+  .icon-menu:hover{
+      color: $ColorPrincipal; 
+  }
+}   
 form{
     input{
        font-family: $LetraPrincipal;
@@ -88,11 +92,21 @@ footer{
     padding-top: 100px;
     padding-bottom: 50px;
     margin: 0;
+    text-align: center;
+    color: $ColorLetraSecundario;
+    @extend.fuenteTitulo;
+    @extend.letraTitulo;
     
   }
 }
 
+@each $redes in $IconosFooter {
+  .icon-#{$redes} {
+    list-style-type: none;
 
+  }
+
+}
 /*---------------------------------Estilos en Fuentes---------------------------------------*/
 .bordeDoble{
     border-top:double 3px $ColorLetraPrimario ; 
@@ -146,9 +160,6 @@ footer{
     height: 50px;
   }
 
-.logoBlanco{
-  height: 50px;
-}
 .logoMarcas{
   height: 60px;
 }
@@ -156,24 +167,18 @@ footer{
   height: 30px;
 }
  /*---------------------------------Texto en Imagen-------------------------------------------------------------------------------------*/
-.texto80{
-    width: 100%;
-    position: absolute;
-    top: 86%;
-    
-    color: $ColorLetraSecundario;
-    background-color: rgba(0,0,0,0.6);
-    margin-bottom: 0;
-    padding: 0.5rem;
-    
-}
 
+.contenedorImg{
+        width: 100%;
+        overflow:hidden;
+      
+}
 
   /*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
 
 .fondoRojo{
     background:$FondoNosotros;
-    
+    color: $ColorLetraSecundario;
     }
 
 .fondoContacto{
@@ -198,12 +203,14 @@ footer{
     }
 .fondoNegro{
   background: $FondoServicio;
+  color: $ColorLetraSecundario;
 }
 /*---------------------------------Estilos Padding y Margenes---------------------------------------*/
 
 .paddingServ{
       padding: 30px;
       background: $FondoServicio;
+      @extend.fuenteNormal;
       color: white;
     }    
    
@@ -225,7 +232,16 @@ footer{
       animation-name: aparecer;
       animation-duration: 4s;
     }
+@keyframes aparecer{
+      0% {
+        opacity: 0;
+      }
+      100%{
+        opacity: 1;
     
+        }
+      
+  }   
 .gradBanner{
       background: linear-gradient(0deg, rgba(26, 25, 25, 0.24) ,rgba(0, 0, 0, 0.4) 30%);
 
@@ -241,26 +257,6 @@ footer{
       background-repeat: no-repeat;
     }    
 
- /*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
-
-button {
-        .icon-menu:hover{
-            color: $ColorPrincipal; 
-        }
-}     
-.contenedorImg{
-        width: 100%;
-        overflow:hidden;
-      
-      }
-
-@each $redes in $IconosFooter {
-    .icon-#{$redes} {
-      list-style-type: none;
-
-    }
-  
-}
 
 /*----------------------------------------------------Efectos---------------------------------------*/
 
@@ -301,68 +297,146 @@ button:focus{
       box-shadow: none;
       
     }
+
 .btn-primary:focus{
   box-shadow: none;
   background-color: #007bff;
 }
 
-@keyframes aparecer{
-    0% {
-      opacity: 0;
-    }
-    100%{
-      opacity: 1;
-  
-      }
-    
-}
+
  
 /*---------------------------BLOQUES BEM------------------------------------*/
+.menu{
+  @extend.fuenteNormal;
+  @extend.letraTitulo;
+}
+.servicios{
+            @extend.letraPrincipal;
+            
+            .servicios__titulo{
+                    @extend.fuenteTitulo;
+                    @extend.letraTitulo;
+                    @extend.bordeDoble;
+            }
+
+            .servicios__items{
+              @extend.letraTitulo;
+              @extend.fuenteNormal;
+              width: 100%;
+              position: absolute;
+              top: 86%;
+              color: $ColorLetraSecundario;
+              background-color: rgba(0,0,0,0.6);
+              margin-bottom: 0;
+              padding: 0.5rem;
+            }
+            .servicios__subtitulo{
+              @extend.letraTitulo;
+              @extend.fuenteNormal;
+            }
+}            
+
+
 .nosotros{
-        .nosotros__texto{
-          font-family: $LetraSecundaria;
+        .nosotros__contacto{
+          @extend.letraTitulo;
+          @extend.fuenteGrande;
           color: $ColorLetraSecundario;
-          font-size: $FuenteGrande;
+          
 
         }
+        .nosotros__texto{
+                    @extend.letraPrincipal;
+                    @extend.fuenteNormal;
+        }
+        .nosotros__titulo{
+                    @extend.letraTitulo;
+                    @extend.fuenteGrande;
+        }
         .nosotros__boton{
-          font-family: $LetraSecundaria;
+          @extend.letraTitulo;
+          @extend.fuenteNormal;
           color: $ColorLetraSecundario;
-          font-size: $FuenteMediana;
+          
         }
 
 }
 
-.formulario{
-            .formulario__titulo{
-              font-family: $LetraSecundaria;
-              font-size: $FuenteMediana;
+.productos{
+            .productos__titulo{
+                @extend.fuenteTitulo;
+                @extend.letraTitulo;
+                @extend.bordeDoble;
+            }
+            .productos__texto{
+              @extend.letraPrincipal;
+              @extend.fuenteNormal;
+            }
+            .productos__contacto{
+              @extend.fuenteNormal;
+              @extend.letraTitulo;
               color: $ColorLetraSecundario;
-
             }
 }
 
 .contacto{
     .contacto__titulo{
-      font-family: $LetraSecundaria;
-      font-size: $FuenteMediana;
+      @extend.fuenteTitulo;
+      @extend.letraTitulo;
+      @extend.bordeDoble;
       
     }
-    .contacto__lista{
-      font-family: $LetraPrincipal;
-     
-    }
-}
 
-.contactoFooter{
-          .contactoFooter__titulo{
-            font-family: $LetraSecundaria;
+    @extend.letraPrincipal;
+    @extend.fuenteNormal;
+}
+.formulario{
+
+            @extend.letraPrincipal;
+            @extend.fuenteNormal;  
+
+          .formulario__texto{
             color: $ColorLetraSecundario;
-            font-size: $FuenteChica;
           }
+          .formulario__titulo{
+            @extend.letraTitulo;
+            @extend.fuenteNormal;
+        }
+        .formulario__cerrar{
+          @extend.letraTitulo;
+        }
+}
+.redes{
+        .redes__principal{
+          @extend.letraTitulo;
+          @extend.fuenteNormal;
+        }
+      .redes__secundario{
+        @extend.letraPrincipal;
+        @extend.fuenteNormal;
+      }
 }
 
-
+footer{
+        .footer__titulo{
+          @extend.letraTitulo;
+          @extend.fuenteChica;
+          color: $ColorLetraSecundario;
+          text-align: center;
+            
+        }
+        .footer__redes{
+          @extend.fuenteGrande;
+          color: $ColorLetraSecundario;
+        }
+        .footer__copy{
+          @extend.fuenteCopy;
+          @extend.bordeSimple;
+          font-family: $LetraPrincipal;
+          color: $ColorLetraSecundario;
+          text-align: center;
+        }
+}
 /*------------------------MEDIAS----------------------------------------------*/
 
   @media screen and (max-width:776px) {

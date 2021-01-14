@@ -28,6 +28,9 @@ a:active {
 a:focus {
   border: none; }
 
+button .icon-menu:hover {
+  color: #BF1313; }
+
 form input {
   font-family: "Open Sans Condensed", sans-serif; }
 
@@ -48,56 +51,76 @@ footer p {
   background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/nosotros.webp");
   padding-top: 100px;
   padding-bottom: 50px;
-  margin: 0; }
+  margin: 0;
+  text-align: center;
+  color: white; }
 
 .padding-servicios {
   background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/servicios.webp");
   padding-top: 100px;
   padding-bottom: 50px;
-  margin: 0; }
+  margin: 0;
+  text-align: center;
+  color: white; }
 
 .padding-productos {
   background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/productos.webp");
   padding-top: 100px;
   padding-bottom: 50px;
-  margin: 0; }
+  margin: 0;
+  text-align: center;
+  color: white; }
 
 .padding-contacto {
   background: linear-gradient(0deg, rgba(199, 8, 8, 0.653099) 100%, rgba(0, 0, 0, 0.971026) 100%), url("../img/contacto.webp");
   padding-top: 100px;
   padding-bottom: 50px;
-  margin: 0; }
+  margin: 0;
+  text-align: center;
+  color: white; }
+
+.icon-facebook {
+  list-style-type: none; }
+
+.icon-phone {
+  list-style-type: none; }
+
+.icon-mail {
+  list-style-type: none; }
+
+.icon-instagram {
+  list-style-type: none; }
 
 /*---------------------------------Estilos en Fuentes---------------------------------------*/
-.bordeDoble {
+.bordeDoble, .servicios .servicios__titulo, .productos .productos__titulo, .contacto .contacto__titulo {
   border-top: double 3px black;
   width: 50%; }
 
-.bordeSimple {
+.bordeSimple, footer .footer__copy {
   border-top: solid 0.5px white; }
 
 .centrar {
   text-align: center; }
 
-.letraTitulo {
+.letraTitulo, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .menu, .servicios .servicios__titulo, .servicios .servicios__items, .servicios .servicios__subtitulo, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, .nosotros .nosotros__boton, .productos .productos__titulo, .productos .productos__contacto, .contacto .contacto__titulo, .formulario .formulario__titulo, .formulario .formulario__cerrar, .redes .redes__principal, footer .footer__titulo {
   font-family: "Bebas Neue", cursive; }
 
-.letraPrincipal {
+.letraPrincipal, .servicios, .nosotros .nosotros__texto, .productos .productos__texto, .contacto, .formulario, .redes .redes__secundario {
   font-family: "Open Sans Condensed", sans-serif; }
 
-.fuenteTitulo {
+.fuenteTitulo, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .servicios .servicios__titulo, .productos .productos__titulo, .contacto .contacto__titulo {
   font-size: 2.2rem; }
 
-.fuenteCopy {
+.fuenteCopy, footer .footer__copy {
   font-size: 0.7rem; }
 
-.fuenteChica {
+.fuenteChica, footer .footer__titulo {
   font-size: 1.1rem; }
 
-.fuenteNormal {
+.fuenteNormal, .paddingServ, .menu, .servicios .servicios__items, .servicios .servicios__subtitulo, .nosotros .nosotros__texto, .nosotros .nosotros__boton, .productos .productos__texto, .productos .productos__contacto, .contacto, .formulario, .formulario .formulario__titulo, .redes .redes__principal, .redes .redes__secundario {
   font-size: 1.4rem; }
 
-.fuenteGrande {
+.fuenteGrande, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, footer .footer__redes {
   font-size: 1.7rem; }
 
 .fuenteBanner {
@@ -115,9 +138,6 @@ footer p {
 .logo {
   height: 50px; }
 
-.logoBlanco {
-  height: 50px; }
-
 .logoMarcas {
   height: 60px; }
 
@@ -125,18 +145,14 @@ footer p {
   height: 30px; }
 
 /*---------------------------------Texto en Imagen-------------------------------------------------------------------------------------*/
-.texto80 {
+.contenedorImg {
   width: 100%;
-  position: absolute;
-  top: 86%;
-  color: white;
-  background-color: rgba(0, 0, 0, 0.6);
-  margin-bottom: 0;
-  padding: 0.5rem; }
+  overflow: hidden; }
 
 /*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
 .fondoRojo {
-  background: linear-gradient(147deg, #c62128 0%, #a00000 74%); }
+  background: linear-gradient(147deg, #c62128 0%, #a00000 74%);
+  color: white; }
 
 .fondoContacto {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.8)), url(../img/contacto.webp);
@@ -146,18 +162,19 @@ footer p {
   background: linear-gradient(to top, rgba(243, 241, 241, 0.753), rgba(223, 219, 219, 0.815)), url(../img/redes.webp); }
 
 .fondoNav {
-  background: rgba(196, 196, 196, 0.253); }
+  background: rgba(243, 243, 243, 0.719); }
 
 .fondoFooter {
   background: linear-gradient(to top right, #000000 0%, #292929 100%); }
 
 .fondoNegro {
-  background: linear-gradient(to left, #000000, #434343); }
+  background: linear-gradient(to left, #000000, #111010);
+  color: white; }
 
 /*---------------------------------Estilos Padding y Margenes---------------------------------------*/
 .paddingServ {
   padding: 30px;
-  background: linear-gradient(to left, #000000, #434343);
+  background: linear-gradient(to left, #000000, #111010);
   color: white; }
 
 /*---------------------------------Estilos Banner---------------------------------------*/
@@ -173,6 +190,12 @@ footer p {
   animation-name: aparecer;
   animation-duration: 4s; }
 
+@keyframes aparecer {
+  0% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
 .gradBanner {
   background: linear-gradient(0deg, rgba(26, 25, 25, 0.24), rgba(0, 0, 0, 0.4) 30%);
   height: 100vh; }
@@ -182,26 +205,6 @@ footer p {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
-
-/*---------------------------------Estilos Fondos-------------------------------------------------------------------------------------*/
-button .icon-menu:hover {
-  color: #BF1313; }
-
-.contenedorImg {
-  width: 100%;
-  overflow: hidden; }
-
-.icon-facebook {
-  list-style-type: none; }
-
-.icon-phone {
-  list-style-type: none; }
-
-.icon-mail {
-  list-style-type: none; }
-
-.icon-instagram {
-  list-style-type: none; }
 
 /*----------------------------------------------------Efectos---------------------------------------*/
 .efecto {
@@ -238,49 +241,49 @@ button:focus {
   box-shadow: none;
   background-color: #007bff; }
 
-@keyframes aparecer {
-  0% {
-    opacity: 0; }
-  100% {
-    opacity: 1; } }
-
 /*---------------------------BLOQUES BEM------------------------------------*/
-.nosotros .nosotros__texto {
-  font-family: "Bebas Neue", cursive;
+.servicios .servicios__items {
+  width: 100%;
+  position: absolute;
+  top: 86%;
   color: white;
-  font-size: 1.7rem; }
+  background-color: rgba(0, 0, 0, 0.6);
+  margin-bottom: 0;
+  padding: 0.5rem; }
 
-.nosotros .nosotros__boton {
-  font-family: "Bebas Neue", cursive;
-  color: white;
-  font-size: 1.4rem; }
-
-.formulario .formulario__titulo {
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.4rem;
+.nosotros .nosotros__contacto {
   color: white; }
 
-.contacto .contacto__titulo {
-  font-family: "Bebas Neue", cursive;
-  font-size: 1.4rem; }
+.nosotros .nosotros__boton {
+  color: white; }
 
-.contacto .contacto__lista {
-  font-family: "Open Sans Condensed", sans-serif; }
+.productos .productos__contacto {
+  color: white; }
 
-.contactoFooter .contactoFooter__titulo {
-  font-family: "Bebas Neue", cursive;
+.formulario .formulario__texto {
+  color: white; }
+
+footer .footer__titulo {
   color: white;
-  font-size: 1.1rem; }
+  text-align: center; }
+
+footer .footer__redes {
+  color: white; }
+
+footer .footer__copy {
+  font-family: "Open Sans Condensed", sans-serif;
+  color: white;
+  text-align: center; }
 
 /*------------------------MEDIAS----------------------------------------------*/
 @media screen and (max-width: 776px) {
-  .fuenteNormal {
+  .fuenteNormal, .paddingServ, .menu, .servicios .servicios__items, .servicios .servicios__subtitulo, .nosotros .nosotros__texto, .nosotros .nosotros__boton, .productos .productos__texto, .productos .productos__contacto, .contacto, .formulario, .formulario .formulario__titulo, .redes .redes__principal, .redes .redes__secundario {
     font-size: 1.1rem; }
-  .fuenteChica {
+  .fuenteChica, footer .footer__titulo {
     font-size: 0.8rem; }
-  .fuenteTitulo {
+  .fuenteTitulo, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .servicios .servicios__titulo, .productos .productos__titulo, .contacto .contacto__titulo {
     font-size: 1.9rem; }
-  .fuenteGrande {
+  .fuenteGrande, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, footer .footer__redes {
     font-size: 1.4rem; }
   .fuenteBanner {
     font-size: 2.1rem; }
