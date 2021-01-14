@@ -80,7 +80,6 @@ footer{
             color: $ColorLetraSecundario;
         }    
         p{
-            color: $ColorLetraSecundario;
             margin-bottom: 0;
         }
 }
@@ -232,12 +231,12 @@ footer{
   @extend.bgCoverCenter;
   }
    
-.fondoTexto{
+.fondoTextoPortada{
   background: rgba(0,0,0,0.4);
   color: $ColorLetraSecundario;
 }
   
-.efectoTitulo{
+.efectoAparecer{
     animation-name: aparecer;
     animation-duration: 4s;
   }
@@ -309,6 +308,24 @@ button:focus{
 .menu{
   @extend.fuenteNormal;
   @extend.letraTitulo;
+}
+.portada{
+        color: $ColorLetraSecundario;
+        .portada__telefono{
+          @extend.letraPrincipal;
+          @extend.fuenteNormal;
+          color: $ColorLetraSecundario;
+        }
+        .portada__titulo{
+          @extend.letraDeco;
+          @extend.fuenteBanner;
+
+        }
+        .portada__subtitulo,.portada__boton{
+          @extend.letraPrincipal;
+          @extend.fuenteNormal;
+        }
+       
 }
 .servicios{
             @extend.letraPrincipal;

@@ -44,7 +44,6 @@ footer a {
   color: white; }
 
 footer p {
-  color: white;
   margin-bottom: 0; }
 
 .padding-nosotros {
@@ -105,7 +104,7 @@ footer p {
 .letraTitulo, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .menu, .servicios .servicios__titulo, .servicios .servicios__items, .servicios .servicios__subtitulo, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, .nosotros .nosotros__boton, .productos .productos__titulo, .productos .productos__contacto, .contacto .contacto__titulo, .formulario .formulario__titulo, .formulario .formulario__cerrar, .redes .redes__principal, footer .footer__titulo {
   font-family: "Bebas Neue", cursive; }
 
-.letraPrincipal, .servicios, .nosotros .nosotros__texto, .productos .productos__texto, .contacto, .formulario, .redes .redes__secundario {
+.letraPrincipal, .portada .portada__telefono, .portada .portada__subtitulo, .portada .portada__boton, .servicios, .nosotros .nosotros__texto, .productos .productos__texto, .contacto, .formulario, .redes .redes__secundario {
   font-family: "Open Sans Condensed", sans-serif; }
 
 .fuenteTitulo, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .servicios .servicios__titulo, .productos .productos__titulo, .contacto .contacto__titulo {
@@ -117,13 +116,13 @@ footer p {
 .fuenteChica, footer .footer__titulo {
   font-size: 1.1rem; }
 
-.fuenteNormal, .paddingServ, .menu, .servicios .servicios__items, .servicios .servicios__subtitulo, .nosotros .nosotros__texto, .nosotros .nosotros__boton, .productos .productos__texto, .productos .productos__contacto, .contacto, .formulario, .formulario .formulario__titulo, .redes .redes__principal, .redes .redes__secundario {
+.fuenteNormal, .paddingServ, .menu, .portada .portada__telefono, .portada .portada__subtitulo, .portada .portada__boton, .servicios .servicios__items, .servicios .servicios__subtitulo, .nosotros .nosotros__texto, .nosotros .nosotros__boton, .productos .productos__texto, .productos .productos__contacto, .contacto, .formulario, .formulario .formulario__titulo, .redes .redes__principal, .redes .redes__secundario {
   font-size: 1.4rem; }
 
 .fuenteGrande, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, footer .footer__redes {
   font-size: 1.7rem; }
 
-.fuenteBanner {
+.fuenteBanner, .portada .portada__titulo {
   font-size: 2.4rem; }
 
 .textoBlanco {
@@ -132,7 +131,7 @@ footer p {
 .textoNegro {
   color: black; }
 
-.letraDeco {
+.letraDeco, .portada .portada__titulo {
   font-family: "Julius Sans One", sans-serif; }
 
 .logo {
@@ -188,11 +187,11 @@ footer p {
   background-image: url(../img/banner.webp);
   height: 100vh; }
 
-.fondoTexto {
+.fondoTextoPortada {
   background: rgba(0, 0, 0, 0.4);
   color: white; }
 
-.efectoTitulo {
+.efectoAparecer {
   animation-name: aparecer;
   animation-duration: 4s; }
 
@@ -242,6 +241,11 @@ button:focus {
   background-color: #007bff; }
 
 /*---------------------------BLOQUES BEM------------------------------------*/
+.portada {
+  color: white; }
+  .portada .portada__telefono {
+    color: white; }
+
 .servicios .servicios__items {
   width: 100%;
   position: absolute;
@@ -277,7 +281,7 @@ footer .footer__copy {
 
 /*------------------------MEDIAS----------------------------------------------*/
 @media screen and (max-width: 776px) {
-  .fuenteNormal, .paddingServ, .menu, .servicios .servicios__items, .servicios .servicios__subtitulo, .nosotros .nosotros__texto, .nosotros .nosotros__boton, .productos .productos__texto, .productos .productos__contacto, .contacto, .formulario, .formulario .formulario__titulo, .redes .redes__principal, .redes .redes__secundario {
+  .fuenteNormal, .paddingServ, .menu, .portada .portada__telefono, .portada .portada__subtitulo, .portada .portada__boton, .servicios .servicios__items, .servicios .servicios__subtitulo, .nosotros .nosotros__texto, .nosotros .nosotros__boton, .productos .productos__texto, .productos .productos__contacto, .contacto, .formulario, .formulario .formulario__titulo, .redes .redes__principal, .redes .redes__secundario {
     font-size: 1.1rem; }
   .fuenteChica, footer .footer__titulo {
     font-size: 0.8rem; }
@@ -285,7 +289,7 @@ footer .footer__copy {
     font-size: 1.9rem; }
   .fuenteGrande, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, footer .footer__redes {
     font-size: 1.4rem; }
-  .fuenteBanner {
+  .fuenteBanner, .portada .portada__titulo {
     font-size: 2.1rem; }
   .logo {
     height: 40px; }

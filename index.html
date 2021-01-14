@@ -69,19 +69,19 @@
               </div>               
           </nav>
 
-          <div class="container-fluid h-100"> 
+          <div class="container-fluid h-100 portada"> 
              
             <div class="row h-100 justify-content-end" >
 
-                 <div class=" col-md-12 d-lg-block text-right " style="margin-top: 4rem;">
-                  <a href="tel:+5492324545010" target="_blank" class="fuenteNormal letraPrincipal text-white p-1"><img src="icon/telefono-blanco.png" alt="telefono" height="25px" class="mr-2">2324545080</a>
+                 <div class=" col-md-12 d-lg-block text-right" style="margin-top: 4rem;">
+                  <a href="tel:+5492324545010" target="_blank" class="portada__telefono p-1"><img src="icon/telefono-blanco.png" alt="telefono" height="25px" class=" mr-2">2324545080</a>
                 </div>     
 
-                <div class="col-md-6 align-self-start efectoTitulo">
+                <div class="col-md-6 align-self-start efectoAparecer">
 
-                    <h2 class=" fuenteBanner text-white letraDeco mb-2">Especialistas en Climatizacion</h2>
-                    <p class="letraPrincipal fuenteNormal fondoTexto p-2 font-italic rounded">Nos dedicamos al asesoramiento, diseño, ejecución y mantenimiento de instalaciones de gas, calefacción y climatización en general.</p>
-                    <a href="contacto.html"><button class=" btn btn-danger letraPrincipal fuenteNormal">Contactate</button> </a>
+                    <h2 class="portada__titulo mb-2">Especialistas en Climatizacion</h2>
+                    <p class="portada__subtitulo fondoTextoPortada p-2 font-italic rounded">Nos dedicamos al asesoramiento, diseño, ejecución y mantenimiento de instalaciones de gas, calefacción y climatización en general.</p>
+                    <a href="contacto.html"><button class=" btn btn-danger portada__boton">Contactate</button> </a>
 
                 </div> 
               
@@ -98,7 +98,7 @@
 <!------------------------------------------SECCION SERVICIOS--------------------------------------------------------------------------------------------------->                   
         
              
-    <div class="container-fluid servicios">
+    <div class="container-fluid servicios"> 
         <h2 class="servicios__titulo mx-auto text-center py-3 mt-2 wow animate__animated animate__backInLeft" data-wow-offset="10">Que hacemos</h2>   
         <div class="row">
                  
@@ -115,7 +115,7 @@
             
             <div class="col-sm-6 col-md-3 col-lg-3 p-0 contenedorImg" width= "100%">
                     <a href="servicios.html#aire"><img class = "efecto " height= "300px"  src="img/aire-acondicionado.webp" alt="aire-acondicionado"></a>
-                    <p class= "servicios__items text-center wow animate__animated animate__fadeInUpBig" data-wow-offset="20">Aire Acondicionado</p>
+                    <p class= "servicios__items text-center wow animate__animated animate__fadeInUpBig" data-wow-offset="20">Aire Acondicionados</p>
             </div>
             <div class="col-sm-6 col-md-3 col-lg-3 p-0 contenedorImg" width= "100%" >
                     <a href="servicios.html#caldera"><img class= "efecto " height= "300px" src="img/caldera-index.webp" alt="radiador"></a>
@@ -132,10 +132,11 @@
         </div>
 
 <!---------------------------------------------------------------SECCION PRODUCTOS------------------------------------------------------------>
-    <div class="productos">
+    <div class="productos">                                                                   
+
         <h2 class="productos__titulo mx-auto text-center py-3 mt-2 wow animate__animated animate__backInLeft" data-wow-offset="10" >Productos</h2>
 
-        <div class="owl-carousel wow animate__animated animate__fadeInDown" data-wow-offset="150">
+        <div class="owl-carousel wow animate__animated animate__fadeInDown" data-wow-offset="100">   <!--Carousel con varias imagenes a la vez-->
           <div> <img src=img/radiador-peisa.webp alt="radiador" class="img-fluid"> </div>
           <div>  <img src="img/toallero-peisa.webp" alt="toallero" class="img-fluid"> </div>
           <div> <img src="img/caldera-peisa.webp" alt="caldera" class="img-fluid" > </div>
@@ -147,8 +148,6 @@
     </div>
  <!---------------------------------------------------------------SECCION CONTACTO------------------------------------------------------------>
          
-     <!--Seccion Contacto con formulario e iconos de redes sociales--> 
-    
     <div class="contacto container-fluid py-3 letraPrincipal fuenteNormal"> 
         <h2 class="contacto__titulo mx-auto text-center py-3 mt-2 wow animate__animated animate__backInLeft" data-wow-offset="10">Contacto</h2>       <!-----------BEM-3------------>
         <div class="row wow animate__animated animate__backInUp" data-wow-offset="100">
@@ -186,7 +185,7 @@
          </div>  
        </div>   
         
-        <section class="container-fluid formulario fondoContacto centrar">
+        <section class="container-fluid formulario fondoContacto centrar">                       <!--Boton con Modal de Formulario de Contacto-->
              <div class="row align-items-center justify-content-center" style="height: 250px;">
                <div class="col-md-12 align-self-center">
                 
@@ -268,7 +267,7 @@
                   
 <!---------------------------------------------------------------FOOTER------------------------------------------------------------>
 
-<footer class="letraPrincipal fondoFooter bordeSimple">  <!--Pie de pagina con Menu y Copyright-->
+<footer class="fondoFooter bordeSimple">  <!--Pie de pagina con Menu y Copyright-->
     <div class="container py-3 ">
         <div class="row">
         
