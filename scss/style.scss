@@ -414,6 +414,8 @@ button:focus{
 
           .formulario__texto{
             color: $ColorLetraSecundario;
+            @extend.fuenteGrande;
+            margin-bottom: 0;
           }
           .formulario__titulo{
             @extend.letraTitulo;

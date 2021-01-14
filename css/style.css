@@ -119,7 +119,7 @@ footer p {
 .fuenteNormal, .paddingServ, .menu, .portada .portada__telefono, .portada .portada__subtitulo, .portada .portada__boton, .servicios .servicios__items, .servicios .servicios__subtitulo, .nosotros .nosotros__texto, .nosotros .nosotros__boton, .productos .productos__texto, .productos .productos__contacto, .contacto, .formulario, .formulario .formulario__titulo, .redes .redes__principal, .redes .redes__secundario {
   font-size: 1.4rem; }
 
-.fuenteGrande, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, footer .footer__redes {
+.fuenteGrande, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, .formulario .formulario__texto, footer .footer__redes {
   font-size: 1.7rem; }
 
 .fuenteBanner, .portada .portada__titulo {
@@ -265,7 +265,8 @@ button:focus {
   color: white; }
 
 .formulario .formulario__texto {
-  color: white; }
+  color: white;
+  margin-bottom: 0; }
 
 footer .footer__titulo {
   color: white;
@@ -287,7 +288,7 @@ footer .footer__copy {
     font-size: 0.8rem; }
   .fuenteTitulo, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .servicios .servicios__titulo, .productos .productos__titulo, .contacto .contacto__titulo {
     font-size: 1.9rem; }
-  .fuenteGrande, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, footer .footer__redes {
+  .fuenteGrande, .nosotros .nosotros__contacto, .nosotros .nosotros__titulo, .formulario .formulario__texto, footer .footer__redes {
     font-size: 1.4rem; }
   .fuenteBanner, .portada .portada__titulo {
     font-size: 2.1rem; }
