@@ -221,7 +221,6 @@ footer{
     background-image: url(../img/banner.webp); 
     height: 100vh;
     @extend.bgCoverCenter;
-    background-attachment: fixed;
     }
 .fondoTexto{
     background: rgba(0,0,0,0.4);
