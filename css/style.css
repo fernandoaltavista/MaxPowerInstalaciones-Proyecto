@@ -162,7 +162,7 @@ footer p {
   background: linear-gradient(to top, rgba(243, 241, 241, 0.753), rgba(223, 219, 219, 0.815)), url(../img/redes.webp); }
 
 .fondoNav {
-  background: rgba(243, 243, 243, 0.719); }
+  background: rgba(243, 243, 243, 0.836); }
 
 .fondoFooter {
   background: linear-gradient(to top right, #000000 0%, #292929 100%); }
@@ -176,6 +176,12 @@ footer p {
   padding: 30px;
   background: linear-gradient(to left, #000000, #111010);
   color: white; }
+
+/*-----------------------------------CLASE CENTRAR BACKGROUND-------------------------------------------*/
+.bgCoverCenter, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .fondoContacto, .fondoRedes, .banner, .gradBanner {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
 
 /*---------------------------------Estilos Banner---------------------------------------*/
 .banner {
@@ -199,12 +205,6 @@ footer p {
 .gradBanner {
   background: linear-gradient(0deg, rgba(26, 25, 25, 0.24), rgba(0, 0, 0, 0.4) 30%);
   height: 100vh; }
-
-/*-----------------------------------CLASE CENTRAR BACKGROUND-------------------------------------------*/
-.bgCoverCenter, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .fondoContacto, .fondoRedes, .banner, .gradBanner {
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat; }
 
 /*----------------------------------------------------Efectos---------------------------------------*/
 .efecto {

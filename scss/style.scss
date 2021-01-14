@@ -7,7 +7,7 @@ $ColorSecundario:black;
 $ColorTerciario:white;
 
 /*--------------------------VARIABLES FONDOS------------------------------------*/
-$FondoMenu:rgba(243, 243, 243, 0.719);
+$FondoMenu:rgba(243, 243, 243, 0.836);
 $FondoNosotros:linear-gradient(147deg, #c62128 0%, #a00000 74%);
 $FondoFooter:linear-gradient(to top right, #000000 0%, #292929 100%);
 $FondoServicio: linear-gradient(to left, #000000, #111010);
@@ -205,6 +205,7 @@ footer{
   background: $FondoServicio;
   color: $ColorLetraSecundario;
 }
+
 /*---------------------------------Estilos Padding y Margenes---------------------------------------*/
 
 .paddingServ{
@@ -214,41 +215,6 @@ footer{
       color: white;
     }    
    
-/*---------------------------------Estilos Banner---------------------------------------*/
-    
-.banner{
-      
-    background-image: url(../img/banner.webp); 
-    height: 100vh;
-    @extend.bgCoverCenter;
-    }
-     
-.fondoTexto{
-    background: rgba(0,0,0,0.4);
-    color: $ColorLetraSecundario;
-}
-    
-.efectoTitulo{
-      animation-name: aparecer;
-      animation-duration: 4s;
-    }
-@keyframes aparecer{
-      0% {
-        opacity: 0;
-      }
-      100%{
-        opacity: 1;
-    
-        }
-      
-  }   
-.gradBanner{
-      background: linear-gradient(0deg, rgba(26, 25, 25, 0.24) ,rgba(0, 0, 0, 0.4) 30%);
-
-     @extend.bgCoverCenter;
-      height: 100vh;  
-      
-    }
 
 /*-----------------------------------CLASE CENTRAR BACKGROUND-------------------------------------------*/
 .bgCoverCenter{
@@ -257,7 +223,41 @@ footer{
       background-repeat: no-repeat;
     }    
 
+/*---------------------------------Estilos Banner---------------------------------------*/
+    
+.banner{
+      
+  background-image: url(../img/banner.webp); 
+  height: 100vh;
+  @extend.bgCoverCenter;
+  }
+   
+.fondoTexto{
+  background: rgba(0,0,0,0.4);
+  color: $ColorLetraSecundario;
+}
+  
+.efectoTitulo{
+    animation-name: aparecer;
+    animation-duration: 4s;
+  }
+@keyframes aparecer{
+    0% {
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+  
+      }
+    
+}   
+.gradBanner{
+    background: linear-gradient(0deg, rgba(26, 25, 25, 0.24) ,rgba(0, 0, 0, 0.4) 30%);
 
+   @extend.bgCoverCenter;
+    height: 100vh;  
+    
+  }
 /*----------------------------------------------------Efectos---------------------------------------*/
 
 .efecto{
