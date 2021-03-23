@@ -5,7 +5,8 @@ _Este es un proyecto para un pyme dedicada al asesoramiento, diseño, ejecución
 ## Construido con 🛠️
 
 * HTML5,CSS,SCSS
-* Framework : Bootstrap
+* Framework : Bootstrap (Responsive)
+* Animate.css
 * Libreria JS : OwlCarousel,Wow
 
 ## Autores ✒️
