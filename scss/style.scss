@@ -7,7 +7,7 @@ $ColorSecundario:black;
 $ColorTerciario:white;
 
 /*--------------------------VARIABLES FONDOS------------------------------------*/
-$FondoMenu:rgba(243, 243, 243, 0.836);
+$FondoMenu:rgba(243, 243, 243, 0.089);
 $FondoNosotros:linear-gradient(147deg, #c62128 0%, #a00000 74%);
 $FondoFooter:linear-gradient(to top right, #000000 0%, #292929 100%);
 $FondoServicio: linear-gradient(to left, #000000, #111010);
@@ -106,6 +106,43 @@ footer{
   }
 
 }
+.icon-menu{
+  background-image: url(../icon/icon-menu.png);
+  display: block;
+  color: white;
+  width: 24px;
+  height: 24px;
+  @extend .bgCoverCenter;
+}
+.icon-facebook{
+  background-image: url(../icon/icon-facebook.png);
+  display: block;
+  width: 20px;
+  height: 20px;
+  @extend .bgCoverCenter;
+}
+.icon-mail{
+  background-image: url(../icon/icon-mail.png);
+  display: block;
+  width: 20px;
+  height: 20px;
+  @extend .bgCoverCenter;
+}
+.icon-phone{
+  background-image: url(../icon/icon-phone.png);
+  display: block;
+  width: 20px;
+  height: 20px;
+  @extend .bgCoverCenter;
+}
+.icon-instagram{
+  background-image: url(../icon/icon-instagram.png);
+  display: block;
+  width: 20px;
+  height: 20px;
+  @extend .bgCoverCenter;
+}
+
 /*---------------------------------Estilos en Fuentes---------------------------------------*/
 .bordeDoble{
     border-top:double 3px $ColorLetraPrimario ; 
@@ -195,6 +232,7 @@ footer{
 }    
 .fondoNav{
       background: $FondoMenu;
+      transition: .5s;
     }
     
 .fondoFooter{
@@ -447,6 +485,7 @@ footer{
         .footer__redes{
           @extend.fuenteGrande;
           color: $ColorLetraSecundario;
+          padding: 1rem;
         }
         .footer__copy{
           @extend.fuenteCopy;

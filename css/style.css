@@ -90,6 +90,37 @@ footer p {
 .icon-instagram {
   list-style-type: none; }
 
+.icon-menu {
+  background-image: url(../icon/icon-menu.png);
+  display: block;
+  color: white;
+  width: 24px;
+  height: 24px; }
+
+.icon-facebook {
+  background-image: url(../icon/icon-facebook.png);
+  display: block;
+  width: 20px;
+  height: 20px; }
+
+.icon-mail {
+  background-image: url(../icon/icon-mail.png);
+  display: block;
+  width: 20px;
+  height: 20px; }
+
+.icon-phone {
+  background-image: url(../icon/icon-phone.png);
+  display: block;
+  width: 20px;
+  height: 20px; }
+
+.icon-instagram {
+  background-image: url(../icon/icon-instagram.png);
+  display: block;
+  width: 20px;
+  height: 20px; }
+
 /*---------------------------------Estilos en Fuentes---------------------------------------*/
 .bordeDoble, .servicios .servicios__titulo, .productos .productos__titulo, .contacto .contacto__titulo {
   border-top: double 3px black;
@@ -161,7 +192,8 @@ footer p {
   background: linear-gradient(to top, rgba(243, 241, 241, 0.753), rgba(223, 219, 219, 0.815)), url(../img/redes.webp); }
 
 .fondoNav {
-  background: rgba(243, 243, 243, 0.836); }
+  background: rgba(243, 243, 243, 0.089);
+  transition: .5s; }
 
 .fondoFooter {
   background: linear-gradient(to top right, #000000 0%, #292929 100%); }
@@ -177,7 +209,7 @@ footer p {
   color: white; }
 
 /*-----------------------------------CLASE CENTRAR BACKGROUND-------------------------------------------*/
-.bgCoverCenter, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .fondoContacto, .fondoRedes, .banner, .gradBanner {
+.bgCoverCenter, .padding-nosotros, .padding-servicios, .padding-productos, .padding-contacto, .icon-menu, .icon-facebook, .icon-mail, .icon-phone, .icon-instagram, .fondoContacto, .fondoRedes, .banner, .gradBanner {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat; }
@@ -273,7 +305,8 @@ footer .footer__titulo {
   text-align: center; }
 
 footer .footer__redes {
-  color: white; }
+  color: white;
+  padding: 1rem; }
 
 footer .footer__copy {
   font-family: "Open Sans Condensed", sans-serif;
